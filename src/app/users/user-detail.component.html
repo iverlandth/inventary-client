@@ -1,0 +1,19 @@
+<div *ngIf="user">
+  <h2>{{user.name}} details!</h2>
+  <div>
+    <label>id: </label>{{user.id}}</div>
+  <div>
+    <label>First Name: </label>
+    <input [(ngModel)]="user.first_name" placeholder="First Name" />
+  </div>
+  <div>
+    <label>Middle Name: </label>
+    <input [(ngModel)]="user.middle_name" placeholder="Middle Name" />
+  </div>
+  <div>
+    <label>Last Name: </label>
+    <input [(ngModel)]="user.last_name" placeholder="Last Name" />
+  </div>
+  <button class="btn btn-default" (click)="goBack()">Back</button>
+  <button class="btn btn-default" (click)="save()">Save</button>
+</div>
